@@ -22,9 +22,9 @@ This project uses **Maestro Studio** for mobile application testing automation. 
 
 ## Prerequisites
 
-- **Node.js**:(https://nodejs.org)
+- Node.js:(https://nodejs.org)
 - Maestro Studio : (https://maestro.app)
-- **Mobile device or emulator/simulator** configured (https://developer.android.com)
+- Mobile device or emulator/simulator configured (https://developer.android.com)
 
 ## Step 1: Clone the repository
 
@@ -63,7 +63,9 @@ npx maestro test
 
 ## Step 5: Run the tests in headless mode
 
-macOS / Linux / Windows: To run the tests in headless mode (without a graphical interface), use the command:
+macOS / Linux / Windows: 
+
+To run the tests in headless mode (without a graphical interface), use the command:
 
 npx maestro test --headless
 

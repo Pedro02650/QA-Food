@@ -23,7 +23,7 @@ This project uses **Maestro Studio** for mobile application testing automation. 
 ## Prerequisites
 
 - **Node.js**:(https://nodejs.org)
-- **Maestro Studio **: (https://maestro.app)
+- Maestro Studio : (https://maestro.app)
 - **Mobile device or emulator/simulator** configured (https://developer.android.com)
 
 ## Step 1: Clone the repository
@@ -50,6 +50,7 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 For Windows:
 
 Set the environment variables in the System > Environment Variables panel: ANDROID_HOME = C:\path\to\android\sdk
+
 Add C:\path\to\android\sdk\platform-tools to Path.
 
 ## Step 4: Run the tests locally

@@ -18,7 +18,57 @@ download-samples downloads these files and apps from storage.googleapis.com.
 
 # Como executar o projeto na sua máquina 
 
+Este projeto utiliza **Maestro Studio** para automação de testes de aplicativos móveis. Siga os passos abaixo para rodar os testes **localmente** e no **modo headless**.
 
+## Pré-requisitos
+
+- **Node.js**:(https://nodejs.org)
+- **Maestro Studio**: (https://maestro.app)
+- **Dispositivo móvel ou emulador/simulador** configurado (https://developer.android.com)
+
+## Passo 1: Clonar o repositório
+
+Clone este repositório:
+
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+##Passo 2: Instalar dependências
+
+Instale as dependências com o npm:
+
+npm install
+
+## Passo 3: Configurar o ambiente
+
+Configure o ambiente dependendo do seu sistema operacional.
+
+**Para macOS ou Linux:
+
+export ANDROID_HOME=/caminho/para/android/sdk
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+
+**Para Windows:
+
+Configure as variáveis de ambiente no painel de Sistema > Variáveis de Ambiente:
+
+ANDROID_HOME = C:\caminho\para\android\sdk
+Adicione C:\caminho\para\android\sdk\platform-tools no Path.
+
+## Passo 4: Rodar os testes localmente
+
+Para rodar os testes localmente em um dispositivo ou emulador, execute o comando:
+
+macOS / Linux / Windows:
+
+npx maestro test
+
+## Passo 5: Rodar os testes em modo headless
+
+Para rodar os testes em modo headless (sem interface gráfica), use o comando:
+
+macOS / Linux / Windows:
+
+npx maestro test --headless
 
 ## Contatos
 

@@ -16,63 +16,59 @@ Maestro is the easiest way to automate UI testing for your mobile app.
 
 download-samples downloads these files and apps from storage.googleapis.com.
 
-# Como executar o projeto na sua máquina 
+# How to run the project on your machine
 
-Este projeto utiliza **Maestro Studio** para automação de testes de aplicativos móveis. Siga os passos abaixo para rodar os testes **localmente** e no **modo headless**.
+This project uses **Maestro Studio** for mobile application testing automation. Follow the steps below to run the tests **locally** and in **headless mode**.
 
-## Pré-requisitos
+## Prerequisites
 
 - **Node.js**:(https://nodejs.org)
-- **Maestro Studio**: (https://maestro.app)
-- **Dispositivo móvel ou emulador/simulador** configurado (https://developer.android.com)
+- **Maestro Studio **: (https://maestro.app)
+- **Mobile device or emulator/simulator** configured (https://developer.android.com)
 
-## Passo 1: Clonar o repositório
+## Step 1: Clone the repository
 
-Clone este repositório:
+Clone this repository:
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https ://github.com/Pedro02650/QA-Food.git
 
-## Passo 2: Instalar dependências
+## Step 2: Install dependencies
 
-Instale as dependências com o npm:
+Install the dependencies with npm:
 
 npm install
 
-## Passo 3: Configurar o ambiente
+## Step 3: Configure the environment
 
-Configure o ambiente dependendo do seu sistema operacional.
+Configure the environment depending on your operating system.
 
-Para macOS ou Linux:
+For macOS or Linux:
 
-export ANDROID_HOME=/caminho/para/android/sdk
+export ANDROID_HOME=/path/to/android/sdk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
-Para Windows:
+For Windows:
 
-Configure as variáveis de ambiente no painel de Sistema > Variáveis de Ambiente:
+Set the environment variables in the System > Environment Variables panel: ANDROID_HOME = C:\path\to\android\sdk
+Add C:\path\to\android\sdk\platform-tools to Path.
 
-ANDROID_HOME = C:\caminho\para\android\sdk
-Adicione C:\caminho\para\android\sdk\platform-tools no Path.
-
-## Passo 4: Rodar os testes localmente
+## Step 4: Run the tests locally
 
 macOS / Linux / Windows:
 
-Para rodar os testes localmente em um dispositivo ou emulador, execute o comando:
+To run the tests locally on a device or emulator, run the command:
 
 npx maestro test
 
-## Passo 5: Rodar os testes em modo headless
+## Step 5: Run the tests in headless mode
 
-macOS / Linux / Windows:
-
-Para rodar os testes em modo headless (sem interface gráfica), use o comando:
+macOS / Linux / Windows: To run the tests in headless mode (without a graphical interface), use the command:
 
 npx maestro test --headless
 
-## Contatos
+## Contacts
 
 <a href="https://www.linkedin.com/in/pedro-cisne/">
-    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
-     <a href = "mailto:pedrohpcisne@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
-  </a>
+< img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+<a href = "mailto:pedrohpcisne@gmail.com" ><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
+ </a>

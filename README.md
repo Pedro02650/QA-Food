@@ -23,8 +23,8 @@ This project uses **Maestro Studio** for mobile application testing automation. 
 ## Prerequisites
 
 - Node.js:(https://nodejs.org)
-- Maestro Studio : (https://maestro.app)
-- Mobile device or emulator/simulator configured (https://developer.android.com)
+- Maestro Studio:(https://maestro.app)
+- Mobile device or emulator/simulator configured:(https://developer.android.com)
 
 ## Step 1: Clone the repository
 

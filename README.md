@@ -42,12 +42,12 @@ npm install
 
 Configure o ambiente dependendo do seu sistema operacional.
 
-**Para macOS ou Linux:
+Para macOS ou Linux:
 
 export ANDROID_HOME=/caminho/para/android/sdk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
-**Para Windows:
+Para Windows:
 
 Configure as variáveis de ambiente no painel de Sistema > Variáveis de Ambiente:
 
@@ -56,17 +56,17 @@ Adicione C:\caminho\para\android\sdk\platform-tools no Path.
 
 ## Passo 4: Rodar os testes localmente
 
-Para rodar os testes localmente em um dispositivo ou emulador, execute o comando:
-
 macOS / Linux / Windows:
+
+Para rodar os testes localmente em um dispositivo ou emulador, execute o comando:
 
 npx maestro test
 
 ## Passo 5: Rodar os testes em modo headless
 
-Para rodar os testes em modo headless (sem interface gráfica), use o comando:
-
 macOS / Linux / Windows:
+
+Para rodar os testes em modo headless (sem interface gráfica), use o comando:
 
 npx maestro test --headless
 

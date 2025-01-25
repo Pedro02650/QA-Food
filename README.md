@@ -32,7 +32,7 @@ Clone este repositório:
 
 git clone https://github.com/seu-usuario/seu-repositorio.git
 
-##Passo 2: Instalar dependências
+## Passo 2: Instalar dependências
 
 Instale as dependências com o npm:
 

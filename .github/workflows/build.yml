@@ -1,27 +1,30 @@
-name: Build
+name: Executando os testes no Device Farm Robin do Maestro
 
 on:
   push:
     branches:
       - main
+      - master
+  pull_request:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
-    container:
-      image: docker.io/cypress/browsers
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
+      - name: Install Maestro
+        run: |
+          curl -Ls "https://get.maestro.mobile.dev" | bash
+          echo "$HOME/.maestro/bin" >> $GITHUB_PATH
 
-      - uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
-        with:
-          api-key: rb_v7Sf3tyDTZa0lPJZ0BGLHadRG9cMItFyhZTG09gHcH8dwpIpOC4Vpe13QDGxikBPKXaeSYQNWCbw0UAUzRCBBpiRZwqMunQESzE
-          app-file: qafood.apk
+      - name: Set Environment Variables
+        run: |
+          echo "MAESTRO_API_KEY=rb_usKqwcWVD4GuKDhTaiDeQqVyFVL48MVTOKUIBYnfv4pJqsvSGcTWuaDupFRW7NfRaZVjvmY65SxkvKnCnQx7way9OP4vw3WO3ao" >> $GITHUB_ENV
+          echo "PROJECT_ID=proj_01jjfqahrbfw0sk5afmrhj6awj gzy " >> $GITHUB_ENV
+
+      - name: Run Maestro Tests
+        run: |
+          maestro cloud --apiKey $MAESTRO_API_KEY --project-id $PROJECT_ID qafood.apk .maestro/

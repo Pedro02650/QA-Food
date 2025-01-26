@@ -17,7 +17,7 @@ appId: com.qazandoqafood
     id: "item-title"
     index: 0
 - tapOn:
-    id: "com.android.systemui:id/wifi_signal"
+    id: "add-item-buttom"
 - tapOn:
     id: "open-cart-button"
 - tapOn:

@@ -23,6 +23,7 @@ appId: com.qazandoqafood
     index: 0
 - tapOn:
     id: "add-item-buttom"
+    index: 0
 - tapOn:
     id: "open-cart-button"
 - tapOn:

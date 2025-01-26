@@ -1,14 +1,5 @@
-Funcionalidade: Compra de comida no aplicativo
-
-  Cenario: Usuario realiza compra com sucesso
-    Dado que eu abri o aplicativo
-    E faço o login com o usuário "teste@teste.com" e senha "123456"
-    Quando eu concedo a permissão de localização
-    E eu escolho o estabelecimento "Pastelaria da Maria"
-    E eu adiciono o produto "Pastel de Carne" ao carrinho
-    E eu visualizo o carrinho
-    E eu finalizo a compra com o método de pagamento "Dinheiro"
-    Então eu vejo a mensagem "Pedido realizado"
+test_name: Compra e2e
+description: Testa a funcionalidade de compra e2e do aplicativo
 
 appId: com.qazandoqafood
 ---

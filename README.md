@@ -47,27 +47,13 @@ For macOS or Linux:
 export ANDROID_HOME=/path/to/android/sdk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
-For Windows:
-
-Set the environment variables in the System > Environment Variables panel: ANDROID_HOME = C:\path\to\android\sdk
-
-Add C:\path\to\android\sdk\platform-tools to Path.
-
 ## Step 4: Run the tests locally
 
-macOS / Linux / Windows:
+macOS / Linux 
 
 To run the tests locally on a device or emulator, run the command:
 
-npx maestro test
-
-## Step 5: Run the tests in headless mode
-
-macOS / Linux / Windows: 
-
-To run the tests in headless mode (without a graphical interface), use the command:
-
-npx maestro test --headless
+maestro test android-flow.yaml
 
 ## Contacts
 
